@@ -2,11 +2,8 @@ name: Update subconverter
 
 on:
   workflow_dispatch:
-    inputs:
-      message:
-        description: 'commit message'
-        required: true
-        default: 'Update subconverter'
+  schedule:
+    - cron: 0 0 1 * *
    
 jobs:
   Build:
